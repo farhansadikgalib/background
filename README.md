@@ -15,7 +15,11 @@ A flexible Flutter widget to display a customizable backgroundâ€”image or videoâ
 
 
 ## Preview
-<img src="https://raw.githubusercontent.com/farhansadikgalib/dropdown_flutter/main/screenshots/preview.gif" width="300"/>
+<img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/video.
+gif" width="300"/>
+
+<img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/image.
+png" width="300"/>
 
 
 <hr>
@@ -48,7 +52,7 @@ import 'package:background/background.dart';
 Widget build(BuildContext context) {
   return Scaffold(
       body: Background(
-      path: 'assets/bg.png',
+      path: 'assets/png/image.png',
         child: Center(
             child: Text(
             'Hello, Farhan!',
@@ -65,7 +69,7 @@ Widget build(BuildContext context) {
 Widget build(BuildContext context) {
   return Scaffold(
       body: Background(
-      path: 'assets/bg.mp4',
+      path: 'assets/video/background.mp4',
         child: Center(
             child: Text(
             'Hello, Farhan!',
