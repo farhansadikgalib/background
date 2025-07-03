@@ -10,6 +10,15 @@ screenshots:
     path: screenshots/image.png
   - description: 'Background with video.'
     path: screenshots/video.gif
+
+
+topics:
+    - flutter
+    - background
+    - image
+    - video
+    - package
+
 environment:
   sdk: ^3.2.6
   flutter: ">=1.17.0"
@@ -25,3 +34,5 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
+
+
