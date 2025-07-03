@@ -11,7 +11,7 @@ screenshots:
   - description: 'Background with video.'
     path: screenshots/video.gif
 environment:
-  sdk: ^3.8.1
+  sdk: ^3.2.6
   flutter: ">=1.17.0"
 
 dependencies:
