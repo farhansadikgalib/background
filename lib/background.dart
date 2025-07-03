@@ -18,7 +18,7 @@ class _BackgroundState extends State<Background> {
   void initState() {
     super.initState();
     if (_isVideo(widget.path)) {
-      _videoController = VideoPlayerController.asset(widget.path!)
+      _videoController = VideoPlayerController.asset(widget.path)
         ..setLooping(true)
         ..setVolume(0.0)
         ..initialize().then((_) {
@@ -54,7 +54,7 @@ class _BackgroundState extends State<Background> {
       background = Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(widget.path!),
+            image: AssetImage(widget.path),
             fit: BoxFit.cover,
           ),
         ),
