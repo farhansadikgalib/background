@@ -1,17 +1,17 @@
 name: background
 description: "A Flutter package to display images or videos as backgrounds."
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/farhansadikgalib/background
 repository: https://github.com/farhansadikgalib/background
 issue_tracker: https://github.com/farhansadikgalib/background/issues
 maintainer: Farhan Sadik Galib
-#screenshots:
-#  - description: 'Content preview as blurred buffer.'
-#    path: screenshots/blurred.png
-#  - description: 'Content loaded.'
-#    path: screenshots/loaded.png
+screenshots:
+  - description: 'Background with image.'
+    path: screenshots/image.png
+  - description: 'Background with video.'
+    path: screenshots/video.gif
 environment:
-  sdk: ^3.8.1
+  sdk: ^3.2.6
   flutter: ">=1.17.0"
 
 dependencies:
