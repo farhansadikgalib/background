@@ -13,13 +13,13 @@ A flexible Flutter widget to display a customizable backgroundâ€”image or videoâ
 - Perfect for splash screens, login pages, or any UI that needs a rich, dynamic background.
 
 
+<div style="display: flex; gap: 100px; align-items: flex-start;">
+  <!-- Video background preview -->
+  <img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/video.gif" height="300"/>
 
-## Preview
-<img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/video.
-gif" width="300"/>
-
-<img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/image.
-png" width="300"/>
+  <!-- Image background preview -->
+  <img src="https://raw.githubusercontent.com/farhansadikgalib/background/main/screenshots/image.png" height="300"/>
+</div>
 
 
 <hr>
@@ -30,7 +30,7 @@ png" width="300"/>
 
 ```dart
 dependencies:
-background:^1.0.0
+background:^1.1.0
 OR
 ```console
 flutter pub add background
@@ -52,14 +52,14 @@ import 'package:background/background.dart';
 Widget build(BuildContext context) {
   return Scaffold(
       body: Background(
-      path: 'assets/png/image.png',
+        path: 'assets/png/image.png',
         child: Center(
-            child: Text(
+          child: Text(
             'Hello, Farhan!',
             style: TextStyle(color: Colors.white, fontSize: 24),
-            ),
+          ),
         ),
-     )
+      )
   );
 }
 ```
@@ -69,14 +69,14 @@ Widget build(BuildContext context) {
 Widget build(BuildContext context) {
   return Scaffold(
       body: Background(
-      path: 'assets/video/background.mp4',
+        path: 'assets/video/background.mp4',
         child: Center(
-            child: Text(
+          child: Text(
             'Hello, Farhan!',
             style: TextStyle(color: Colors.white, fontSize: 24),
-            ),
+          ),
         ),
-     )
+      )
   );
 }
 ```
