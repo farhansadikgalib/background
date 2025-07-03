@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+
 class Background extends StatefulWidget {
   final Widget child;
-  final String? path;
+  final String path;
 
-  const Background({
-    super.key,
-    required this.child,
-    this.path,
-  });
+  const Background({super.key, required this.child, required this.path});
 
   @override
   State<Background> createState() => _BackgroundState();
@@ -67,9 +64,7 @@ class _BackgroundState extends State<Background> {
         _videoController!.value.isInitialized) {
       background = VideoPlayer(_videoController!);
     } else {
-      background = Container(
-        color: Theme.of(context).colorScheme.surface,
-      );
+      background = Container(color: Theme.of(context).colorScheme.surface);
     }
 
     return Stack(

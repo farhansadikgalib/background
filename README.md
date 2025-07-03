@@ -1,39 +1,87 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Background
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package to display images or videos as backgrounds.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A flexible Flutter widget to display a customizable background—image or video—behind any child widget.
+
+- Image Background: Automatically displays an image when an image file path is provided.
+- Video Background: Plays a muted, looping video when a video file path is detected.
+- Child Overlay: Seamlessly overlays your child widget on top of the background.
+- Smart Media Detection: Automatically identifies the background type based on the file path.
+- Perfect for splash screens, login pages, or any UI that needs a rich, dynamic background.
+
+
+
+## Preview
+<img src="https://raw.githubusercontent.com/farhansadikgalib/dropdown_flutter/main/screenshots/preview.gif" width="300"/>
+
+
+<hr>
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+1. Add the latest version of package to your `pubspec.yaml` (and run `flutter pub get`):
 
 ```dart
-const like = 'sample';
+dependencies:
+background:^0.0.1
+OR
+```console
+flutter pub add background
 ```
 
-## Additional information
+2. Import the package and use it in your Flutter App.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:background/background.dart';
+```
+
+<hr>
+
+## Example usage
+
+### **Background Image**
+```dart
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+      body: Background(
+      path: 'assets/bg.png',
+        child: Center(
+            child: Text(
+            'Hello, Farhan!',
+            style: TextStyle(color: Colors.white, fontSize: 24),
+            ),
+        ),
+     )
+  );
+}
+```
+### **Background Video**
+```dart
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+      body: Background(
+      path: 'assets/bg.mp4',
+        child: Center(
+            child: Text(
+            'Hello, Farhan!',
+            style: TextStyle(color: Colors.white, fontSize: 24),
+            ),
+        ),
+     )
+  );
+}
+```
+
+
+
+## Supported File Types
+| File Type | Supported    |
+|-----------|--------------|
+| Image     | PNG, JPG, JPEG, GIF, BMP, WEBP|
+| Video     | MP4, MOV, AVI, MKV, WEBM|
+
