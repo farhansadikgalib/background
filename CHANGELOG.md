@@ -1,3 +1,5 @@
-## 0.0.1
+# Changelog for Background
+## 1.0.0
 
-- Initial release.
+- Added support for both image and video backgrounds.
+- Improved performance and stability.

@@ -30,7 +30,7 @@ png" width="300"/>
 
 ```dart
 dependencies:
-background:^0.0.1
+background:^1.0.0
 OR
 ```console
 flutter pub add background
