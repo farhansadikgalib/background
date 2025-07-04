@@ -14,3 +14,7 @@
 
 ## 1.3.0
 - Publisher added to README.md for visibility.
+
+## 1.3.1
+- Publisher added to README.md for visibility.
+
