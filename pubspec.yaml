@@ -7,17 +7,18 @@ issue_tracker: https://github.com/farhansadikgalib/background/issues
 maintainer: Farhan Sadik Galib
 publish_to: https://pub.dev/publishers/farhansadikgalib.com/packages
 screenshots:
-  - description: 'Background with video.'
-    path: screenshots/video.gif
   - description: 'Background with image.'
     path: screenshots/image.png
+  - description: 'Background with video.'
+    path: screenshots/video.gif
+
 
 topics:
-    - flutter
     - background
     - image
     - video
-    - widget
+    - splash
+    - onboarding
 
 environment:
   sdk: ^3.2.6
