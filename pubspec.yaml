@@ -6,11 +6,10 @@ repository: https://github.com/farhansadikgalib/background
 issue_tracker: https://github.com/farhansadikgalib/background/issues
 maintainer: Farhan Sadik Galib
 screenshots:
-  - description: 'Background with image.'
-    path: screenshots/image.png
   - description: 'Background with video.'
     path: screenshots/video.gif
-
+  - description: 'Background with image.'
+    path: screenshots/image.png
 
 topics:
     - flutter
