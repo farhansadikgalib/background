@@ -12,9 +12,8 @@
 
 - Added support for custom child widgets.
 
-## 1.3.0
+## 1.3.2
 - Publisher added to README.md for visibility.
 
-## 1.3.1
-- Publisher added to README.md for visibility.
+
 
