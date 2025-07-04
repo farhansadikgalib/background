@@ -7,3 +7,7 @@
 ## 1.1.0
 
 - Documentation updates for better clarity.
+
+## 1.2.0
+
+- Added support for custom child widgets.
